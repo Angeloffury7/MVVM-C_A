@@ -18,10 +18,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        initialState()
     }
     
+    func initialState() {
+        label.text = ""
+    }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        viewModel.userButtonPressed(login: loginField.text ?? "", password: passwordField.text ?? "")
     }
     
     func bindViewModel() {
@@ -30,8 +35,12 @@ class ViewController: UIViewController {
                 self.label.text = statusText
             }
         }
+        viewModel.statusColor.bind { statusColor in
+            DispatchQueue.main.async {
+                self.label.textColor = statusColor
+            }
+        }
     }
-
 }
 
 
