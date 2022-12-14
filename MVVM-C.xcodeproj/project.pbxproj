@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58462E112947BF6A00DE4008 /* MVVM-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58462E112947BF6A00DE4008 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58462E142947BF6A00DE4008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58462E162947BF6A00DE4008 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		58462E182947BF6A00DE4008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		58462E122947BF6A00DE4008 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58462E112947BF6A00DE4008 /* MVVM-4.app */,
+				58462E112947BF6A00DE4008 /* MVVM-C.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58462E102947BF6A00DE4008 /* MVVM-4 */ = {
+		58462E102947BF6A00DE4008 /* MVVM-C */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58462E252947BF6E00DE4008 /* Build configuration list for PBXNativeTarget "MVVM-4" */;
+			buildConfigurationList = 58462E252947BF6E00DE4008 /* Build configuration list for PBXNativeTarget "MVVM-C" */;
 			buildPhases = (
 				58462E0D2947BF6A00DE4008 /* Sources */,
 				58462E0E2947BF6A00DE4008 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM-4";
+			name = "MVVM-C";
 			productName = "MVVM-4";
-			productReference = 58462E112947BF6A00DE4008 /* MVVM-4.app */;
+			productReference = 58462E112947BF6A00DE4008 /* MVVM-C.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58462E0C2947BF6A00DE4008 /* Build configuration list for PBXProject "MVVM-4" */;
+			buildConfigurationList = 58462E0C2947BF6A00DE4008 /* Build configuration list for PBXProject "MVVM-C" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58462E102947BF6A00DE4008 /* MVVM-4 */,
+				58462E102947BF6A00DE4008 /* MVVM-C */,
 			);
 		};
 /* End PBXProject section */
@@ -391,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58462E0C2947BF6A00DE4008 /* Build configuration list for PBXProject "MVVM-4" */ = {
+		58462E0C2947BF6A00DE4008 /* Build configuration list for PBXProject "MVVM-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58462E232947BF6E00DE4008 /* Debug */,
@@ -400,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58462E252947BF6E00DE4008 /* Build configuration list for PBXNativeTarget "MVVM-4" */ = {
+		58462E252947BF6E00DE4008 /* Build configuration list for PBXNativeTarget "MVVM-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58462E262947BF6E00DE4008 /* Debug */,
