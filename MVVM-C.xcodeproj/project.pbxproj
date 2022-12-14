@@ -60,7 +60,7 @@
 		58462E082947BF6A00DE4008 = {
 			isa = PBXGroup;
 			children = (
-				58462E132947BF6A00DE4008 /* MVVM-4 */,
+				58462E132947BF6A00DE4008 /* MVVM-C */,
 				58462E122947BF6A00DE4008 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58462E132947BF6A00DE4008 /* MVVM-4 */ = {
+		58462E132947BF6A00DE4008 /* MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
 				589F1F2A294A0CFA00D1D59A /* Coordinators */,
@@ -84,7 +84,7 @@
 				58462E1D2947BF6E00DE4008 /* Assets.xcassets */,
 				58462E222947BF6E00DE4008 /* Info.plist */,
 			);
-			path = "MVVM-4";
+			path = "MVVM-C";
 			sourceTree = "<group>";
 		};
 		58462E282948C89D00DE4008 /* ViewModels */ = {
@@ -393,7 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3N225TZ4SD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-4/Info.plist";
+				INFOPLIST_FILE = "MVVM-C/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -404,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nega.MVVM-4";
+				PRODUCT_BUNDLE_IDENTIFIER = "nega.MVVM-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -421,7 +421,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3N225TZ4SD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-4/Info.plist";
+				INFOPLIST_FILE = "MVVM-C/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -432,7 +432,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nega.MVVM-4";
+				PRODUCT_BUNDLE_IDENTIFIER = "nega.MVVM-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
