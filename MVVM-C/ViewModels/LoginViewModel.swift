@@ -6,22 +6,58 @@
 //
 
 import Foundation
-import UIKit.UIColor
+import Combine
+
+enum ViewStates {
+    case loading
+    case success
+    case failed
+    case none
+}
 
 class LoginViewModel {
-    var statusText = Dynamic("")
-    var statusColor = Dynamic(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    @Published var email = ""
+    @Published var password = ""
+    @Published var state: ViewStates = .none
+    
     var isLoggedIn = false
     
-    func userButtonPressed(login: String, password: String) {
-        if login != User.logins[0].login || password != User.logins[0].password {
-            statusText.value = "Log in failed."
-            statusColor.value = #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)
-            isLoggedIn = false
-        } else {
-            statusText.value = "You successfully logged in."
-            statusColor.value = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
-            isLoggedIn = true
+    var coordinator: AppCoordinator?
+    
+    var isValisdEmailPublisher: AnyPublisher<Bool, Never> {
+        $email
+            .map { $0.isEmail() }
+            .eraseToAnyPublisher()
+    }
+    
+    var isValisdPasswordPublisher: AnyPublisher<Bool, Never> {
+        $password
+            .map { !$0.isEmpty }
+            .eraseToAnyPublisher()
+    }
+    
+    var isLoginEnabled: AnyPublisher<Bool, Never> {
+        Publishers.CombineLatest(isValisdEmailPublisher, isValisdPasswordPublisher)
+            .map { $0 && $1 }
+            .eraseToAnyPublisher()
+    }
+    
+    func submitLogin() {
+        state = .loading
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) { [weak self] in
+            guard let self = self else { return }
+            if self.isCorrectLogin() {
+                self.state = .success
+            } else {
+                self.state = .failed
+            }
         }
     }
+    
+    
+    func isCorrectLogin() -> Bool {
+        return email == "test@mail.com" && password == "12345"
+    }
 }
+
